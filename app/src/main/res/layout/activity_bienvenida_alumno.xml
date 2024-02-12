@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/griffindorfBackground"
+    tools:context=".BienvenidaAlumno">
+
+    <ImageView
+        android:id="@+id/imgCasa"
+        android:layout_width="135dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtTituloCasa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gryffindor" />
+
+    <TextView
+        android:id="@+id/txtTituloCasa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="@font/yusei_magic"
+        android:text="Bienvenido a Griffindorf"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtNombreApellido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgCasa" />
+
+    <TextView
+        android:id="@+id/txtHabilidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="8dp"
+        android:text="Habilidad: 25"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtInteligencia"
+        app:layout_constraintEnd_toEndOf="@+id/txtCreatividad"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreApellido" />
+
+    <TextView
+        android:id="@+id/txtInteligencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:text="Inteligencia: 20"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtCreatividad"
+        app:layout_constraintStart_toStartOf="@+id/txtHabilidad"
+        app:layout_constraintTop_toBottomOf="@+id/txtHabilidad" />
+
+    <TextView
+        android:id="@+id/txtCreatividad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginBottom="16dp"
+        android:text="Creatividad: 10"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtEtica"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtInteligencia" />
+
+    <TextView
+        android:id="@+id/txtEtica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="12dp"
+        android:text="Ética: 12"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtCoraje"
+        app:layout_constraintStart_toStartOf="@+id/txtCreatividad"
+        app:layout_constraintTop_toBottomOf="@+id/txtCreatividad" />
+
+    <TextView
+        android:id="@+id/txtCoraje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:text="Coraje: 11"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtLealtad"
+        app:layout_constraintStart_toStartOf="@+id/txtEtica"
+        app:layout_constraintTop_toBottomOf="@+id/txtEtica" />
+
+    <TextView
+        android:id="@+id/txtLealtad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:text="Lealtad: 20"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnVolverInicio"
+        app:layout_constraintStart_toStartOf="@+id/txtCoraje"
+        app:layout_constraintTop_toBottomOf="@+id/txtCoraje" />
+
+    <Button
+        android:id="@+id/btnVolverInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="105dp"
+        android:text="Volver a Inicio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLealtad" />
+
+    <TextView
+        android:id="@+id/txtNombreApellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/yusei_magic"
+        android:text="Newet Potter"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtHabilidad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloCasa" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

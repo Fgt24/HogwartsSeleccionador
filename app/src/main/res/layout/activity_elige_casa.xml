@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/casashogwarts"
+    tools:context=".EligeCasa">
+
+    <TextView
+        android:id="@+id/txtNumGriffindorf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="21dp"
+        android:text="0 alumnos"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/btnVerGriffindorf"
+        app:layout_constraintEnd_toEndOf="@+id/btnVerGriffindorf" />
+
+    <TextView
+        android:id="@+id/txtNumSlytherin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="24dp"
+        android:text="0 alumnos"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/btnVerSlytherin"
+        app:layout_constraintStart_toStartOf="@+id/btnVerSlytherin" />
+
+    <TextView
+        android:id="@+id/txtNumHufflepuff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="21dp"
+        android:text="0 alumnos"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/btnVerHufflepuff"
+        app:layout_constraintEnd_toEndOf="@+id/btnVerHufflepuff" />
+
+    <TextView
+        android:id="@+id/txtNumRavenclaw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="23dp"
+        android:text="0 alumnos"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/btnVerRavenclaw"
+        app:layout_constraintEnd_toEndOf="@+id/btnVerRavenclaw" />
+
+    <Button
+        android:id="@+id/btnVerGriffindorf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="264dp"
+        android:text="Ver casa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnVerSlytherin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="264dp"
+        android:layout_marginEnd="52dp"
+        android:text="Ver casa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnVerHufflepuff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
+        android:text="Ver casa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnVerGriffindorf"
+        app:layout_constraintStart_toStartOf="@+id/btnVerGriffindorf" />
+
+    <Button
+        android:id="@+id/btnVerRavenclaw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="37dp"
+        android:text="Ver casa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnAtrasDesdeCasas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="27dp"
+        app:layout_constraintStart_toEndOf="@+id/btnVerGriffindorf"
+        app:layout_constraintTop_toBottomOf="@+id/btnVerGriffindorf"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
